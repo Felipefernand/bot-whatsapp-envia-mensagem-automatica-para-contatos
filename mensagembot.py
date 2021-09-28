@@ -1,13 +1,15 @@
-import pywhatkit
+import pywhatkit #bibliotecas
 import keyboard
 import time
 from datetime import datetime
 
-contatos = ['+5493515193933']
+contatos = ['+55']  #numeros, para adicionar mais coloque 'numero','numero'
 
-while len(contatos) >= 1:
+while len(contatos) >= 1:  #intervalo envio
 
-    pywhatkit.sendwhatmsg(contatos[0], 'Carine gostosa',datetime.now().hour, datetime.now().minute + 2)
+    #mensagens enviadas
+    pywhatkit.sendwhatmsg(contatos[0], 'Digite aqui a mensagem',datetime.now().hour, datetime.now().minute + 2)
     del contatos[0]
     time.sleep(60)
     keyboard.press_and_release('ctr + w')
+    #não mecha no pc depois de compilar
