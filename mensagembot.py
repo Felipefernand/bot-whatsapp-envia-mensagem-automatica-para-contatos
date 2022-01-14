@@ -12,4 +12,4 @@ while len(contatos) >= 1:  #intervalo envio
     del contatos[0]
     time.sleep(60)
     keyboard.press_and_release('ctr + w')
-    #não mecha no pc depois de compilar
+    #não use o pc depois de compilar
